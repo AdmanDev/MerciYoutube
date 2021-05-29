@@ -1,0 +1,22 @@
+﻿<Window x:Class="MerciYoutube.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MerciYoutube"
+        mc:Ignorable="d"
+        Title="Merci à vous ! (by Admandev)"  WindowStartupLocation="CenterScreen" SizeToContent="Height" Width="881">
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Image Name="Img_subLogo" Width="100" Height="100" Source="logo.png" >
+                <Image.Effect>
+                    <BlurEffect Radius="15"/>
+                </Image.Effect>
+            </Image>
+            <StackPanel Orientation="Horizontal" Margin="0, 5, 0, 0">
+                <Label x:Name="LB_Thanks" Content="Merci " FontSize="40" />
+                <Label x:Name="LB_SubName" Content="à tous !" FontSize="40" Foreground="#FF0BC8FF" FontWeight="Bold" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
